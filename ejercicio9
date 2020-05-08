@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char cadena[200];
+int numero1;
+printf("Por favor, introduzca la palabra que desee invertir: ");
+scanf("%s", cadena);
+int a = strlen(cadena)-1;
+printf("La palabra invertida es:\t");
+for (numero1=a; numero1>=0; numero1--){
+printf("%c", cadena[numero1]);
+}
+return 0;
+}
