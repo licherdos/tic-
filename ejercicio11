@@ -1,0 +1,44 @@
+#include <stdio.h>
+// typedef
+struct Persona {
+    int edad;
+    char nombre[10];
+};
+int main()
+{
+    struct Persona grupo[3];
+    
+    printf("Introduzca edad de la persona 1:");
+    scanf("%d", &grupo[0].edad);
+    printf("\n");
+    
+    printf("Introduzca el nombre de la persona 1:");
+    scanf("%s", grupo[0].nombre);
+    printf("\n");
+    
+    printf("Introduzca edad de la persona 2:");
+    scanf("%d", &grupo[1].edad);
+    printf("\n");
+    
+    printf("Introduzca el nombre de la persona 2:");
+    scanf("%s", grupo[1].nombre);
+    printf("\n");
+
+    printf("Introduzca edad de la persona 3:");
+    scanf("%d", &grupo[2].edad);
+    printf("\n");
+    
+    printf("Introduzca el nombre de la persona 3:");
+    scanf("%s", grupo[2].nombre);
+    printf("\n");
+    
+    int i=0;
+    while(i<=2){
+        if(grupo[i].edad>=18){
+            printf("Las personas mayores de edad son: %s\n", grupo[i].nombre);
+        }
+        i++;
+    }
+    
+    return 0;
+}
