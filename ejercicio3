@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+     char semaforo;
+     
+    
+     printf("Opciones posibles:\n r/R: rojo \n a/A: ambar \n v/V: verde");
+     printf("\n");
+     printf("introduzca color del semaforo:");
+     scanf("%c", &semaforo);
+     
+     switch(semaforo){
+         case 'r': case 'R':
+             printf("No puedes pasar. \n");
+             break;
+         case 'a': case 'A':
+             printf("Pasar con cuidado. \n");
+             break;
+         case 'v': case 'V':
+             printf("Puedes pasar. \n");
+             break;
+     }
+
+    return 0;
+}
