@@ -1,0 +1,15 @@
+#include <conio.h>
+#include <stdio.h>
+
+int main ()
+
+{
+    int gf,conv;
+
+    printf("Escriba los grados farehrenheit que quiera convertir: ");
+    scanf("%d",&gf);
+    conv=(gf-32)*5/9;
+    printf("La conversion a grados centigrados es %d",conv);
+
+    return 0;
+}
