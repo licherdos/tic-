@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+   int main()
+{
+  int filas;
+  int posicion;
+ 
+  printf("Introduzca el numero deseado de filas:");
+  scanf(" %d",&filas);
+ 
+  int a = 1;
+  int estrellas = 1;
+ 
+  for(a=1; a<=filas; a++){
+    int b = 0;
+   
+    for(b=0; b<=(filas-a); b++){
+        printf(" ");
+    }
+    if(a==1){
+        printf("*");
+    }
+    else{
+        estrellas = estrellas + 2;
+        for(b=1; b<=estrellas; b++){
+            printf("*");
+        }
+    }
+    printf("\n");
+  }
+  return 0;
+}
