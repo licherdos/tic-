@@ -1,0 +1,19 @@
+#include <stdio.h>
+void intercambiar ( int * namber1, int * namber2){
+    int aux = *namber1;
+    *namber1 = *namber2;
+    *namber2 = aux;
+}
+int main()
+{
+    int namber1;
+    int namber2;
+    printf("Introduzca el primer numero deseado: ");
+    scanf("\n %d", &namber1);
+    printf("Introduzca el segundo numero deseado: ");
+    scanf("\n %d", &namber2);
+    intercambiar(&namber1, &namber2);
+    printf("El intercambio de los numeros es: el numero1 seria %d y el numero2 seria %d", namber1, namber2);
+    
+    return 0;
+}
