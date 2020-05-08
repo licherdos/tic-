@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+int main()
+{
+    int suma (int numero1, int numero2){
+        return numero1 + numero2;
+    }
+    int resta(int numero1, int numero2){
+        return numero1 - numero2;
+    }
+    int mult (int numero1, int numero2){
+        return numero1 * numero2;
+    }
+    int division (int numero1, int numero2){
+        return numero1 / numero2;
+    }
+    
+    int numero1;
+    int numero2;
+    int operacion;
+    int resultado = 0;
+    char continuar='s';
+    
+    while(continuar=='s'||continuar=='S'){
+        printf("Introduce el primer numero:");
+        scanf("%d", &numero1);
+        printf("\n");
+        
+        printf("Introduce el segundo numero:");
+        scanf("%d", &numero2);
+        printf("\n");
+        
+        printf("1.Suma");
+        printf("\n");
+        printf("2.Resta");
+        printf("\n");
+        printf("3.Multiplicación");
+        printf("\n");
+        printf("4.División");
+        printf("¿Qué operación desea elegir? ");
+        scanf("%d", &operacion);
+        printf("\n");
+    
+        switch(operacion){
+            case 1:
+                resultado= suma (numero1, numero2);
+                 break;
+             case 2:
+             resultado=resta (numero1, numero2);     
+                 break;
+             case 3:
+             resultado=mult (numero1, numero2);
+                 break;
+             case 4: 
+             resultado=division (numero1, numero2);     
+                 break;
+             
+         }
+         
+        
+        printf("El resultado es: %d", resultado);
+        printf("¿Quieres volver a hacer la operacion?");
+        printf("Si quieres seguir pulsa s/S");
+        continuar = 's';
+        printf("Si no quieres seguir pulsa n");
+        continuar = 'n';
+        
+    }
+    return 0;
+}
